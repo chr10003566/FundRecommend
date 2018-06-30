@@ -1,7 +1,7 @@
 package com.cui.mapper;
 
-import com.cui.PO.data.UserPO;
-import com.cui.PO.request.UserPORequest;
+import com.cui.po.data.UserPO;
+import com.cui.po.request.UserPORequest;
 
 import java.util.List;
 

@@ -16,6 +16,6 @@
     </settings>
 
     <typeAliases>
-        <typeAlias alias="User" type="com.cui.PO.data.UserPO"/>
+        <typeAlias alias="User" type="com.cui.po.data.UserPO"/>
     </typeAliases>
 </configuration>

@@ -1,8 +1,8 @@
 package com.cui.dao;
 
-import com.cui.PO.data.UserPO;
-import com.cui.PO.request.UserPORequest;
-import com.cui.PO.result.UserPOResult;
+import com.cui.po.data.UserPO;
+import com.cui.po.request.UserPORequest;
+import com.cui.po.result.UserPOResult;
 
 /**
  * Created by Promisesaybye on 2018/6/29.

@@ -1,7 +1,7 @@
 package com.cui.controller;
 
 
-import com.cui.PO.data.UserPO;
+import com.cui.po.data.UserPO;
 import com.cui.Response.ResponseObj;
 import com.cui.service.UserService;
 import com.cui.utils.GsonUtils;

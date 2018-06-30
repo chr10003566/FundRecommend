@@ -1,6 +1,6 @@
-package com.cui.PO.result;
+package com.cui.po.result;
 
-import com.cui.PO.data.UserPO;
+import com.cui.po.data.UserPO;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
 package com.cui.dao.impl;
 
-import com.cui.PO.data.UserPO;
-import com.cui.PO.request.UserPORequest;
-import com.cui.PO.result.CommonResult;
-import com.cui.PO.result.UserPOResult;
+import com.cui.po.data.UserPO;
+import com.cui.po.request.UserPORequest;
+import com.cui.po.result.CommonResult;
+import com.cui.po.result.UserPOResult;
 import com.cui.dao.UserDao;
 import com.cui.mapper.UserMapper;
 import org.springframework.stereotype.Repository;

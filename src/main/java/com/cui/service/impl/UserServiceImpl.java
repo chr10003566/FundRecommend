@@ -1,9 +1,9 @@
 package com.cui.service.impl;
 
 
-import com.cui.PO.data.UserPO;
-import com.cui.PO.request.UserPORequest;
-import com.cui.PO.result.UserPOResult;
+import com.cui.po.data.UserPO;
+import com.cui.po.request.UserPORequest;
+import com.cui.po.result.UserPOResult;
 import com.cui.dao.UserDao;
 import com.cui.exception.OtherThingsException;
 import com.cui.service.UserService;

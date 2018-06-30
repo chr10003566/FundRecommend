@@ -1,4 +1,4 @@
-package com.cui.PO.request;
+package com.cui.po.request;
 
 /**
  * Created by Promisesaybye on 2018/6/29.

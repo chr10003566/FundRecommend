@@ -1,4 +1,4 @@
-package com.cui.PO.data;
+package com.cui.po.data;
 
 /**
  * Created by Promisesaybye on 2018/6/29.

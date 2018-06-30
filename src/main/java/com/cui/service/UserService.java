@@ -1,6 +1,6 @@
 package com.cui.service;
 
-import com.cui.PO.data.UserPO;
+import com.cui.po.data.UserPO;
 
 /**
  * Created by Administrator on 2016/9/25.
