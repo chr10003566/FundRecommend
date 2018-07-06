@@ -7,6 +7,7 @@ import com.cui.po.result.UserPOResult;
 import com.cui.dao.UserDao;
 import com.cui.exception.OtherThingsException;
 import com.cui.service.UserService;
+import com.cui.vo.result.CommonResult;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -30,9 +31,8 @@ public class UserServiceImpl implements UserService {
         try {
             result = userDao.insert(user);
         } catch (Exception e) {
-            System.out.println("添加用户失败,用户已经存在");
-            //其他用户添加失败异常
-            throw new OtherThingsException(e);
+            result.setStatus(CommonResult.CODE.SUCCESS);
+            result.setMessage("添加用户失败,用户已经存在");
         }
         if (result.isSuccess())
             System.out.println("添加用户成功");

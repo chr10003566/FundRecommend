@@ -1,15 +1,16 @@
 package com.cui.controller;
 
+import com.cui.po.data.recommend.RecommendPO;
+import com.cui.po.result.recommend.RecommendPOResult;
 import com.cui.service.RecommendService;
-import com.cui.utils.StringUtils;
-import com.cui.vo.param.RecommendParam;
+import com.cui.utils.GsonUtils;
+import com.cui.vo.result.CommonResult;
+import com.cui.vo.result.recommend.RecommendVOResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by Promisesaybye on 2018/6/30.
@@ -22,16 +23,25 @@ public class RecommendController {
     @Resource
     private RecommendService service;
 
-    @RequestMapping(value = "recommend", method = RequestMethod.POST)
-    public ModelAndView recommend(HttpServletRequest req, RecommendParam param) throws Exception{
-        ModelAndView mav = new ModelAndView();  //创建一个jsp页面对象
-        mav.setViewName("home");
+    @RequestMapping(value = "/recommend",method = RequestMethod.GET)
+    public String recommend(){
+        String res;
+        RecommendVOResult result = new RecommendVOResult();
 
-        if (null == param){
-            mav.addObject("message", "推荐信息不能为空！");  //加入提示信息
-            return mav; //返回页面
+        RecommendPOResult poResult = new RecommendPOResult();
+        RecommendPO recommendPO = new RecommendPO();
+        recommendPO.setId(1);
+        recommendPO.setProbability("adasd");
+        recommendPO.setTaskBatch("dasd");
+        recommendPO.setUserId("dasd");
+
+        //测试接口
+        poResult = service.test(recommendPO);
+        if (poResult.isSuccess()){
+            result.setStatus(CommonResult.CODE.SUCCESS);
+            result.setMessage("数据插入数据库成功");
         }
-
-        return mav;
+        res = GsonUtils.gson.toJson(result);
+        return res;
     }
 }

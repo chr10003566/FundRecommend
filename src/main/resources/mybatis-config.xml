@@ -17,5 +17,6 @@
 
     <typeAliases>
         <typeAlias alias="User" type="com.cui.po.data.UserPO"/>
+        <typeAlias alias="Recommend" type="com.cui.po.data.recommend.RecommendPO" />
     </typeAliases>
 </configuration>
