@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--数据库驱动-->
+    <properties resource="jdbc.properties" />
+    <context id="testTables"  targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库链接地址账号密码-->
+        <jdbcConnection
+                driverClass="${jdbc.driver}"
+                connectionURL="${jdbc.url}"
+                userId="${jdbc.username}"
+                password="${jdbc.password}">
+        </jdbcConnection>
+
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+
+        <!--生成Model类存放位置-->
+        <javaModelGenerator targetPackage="com.cui.po.data.recommend" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+
+        <!--生成映射文件存放位置-->
+        <!--sqlMapGenerator targetPackage="mapper" targetProject="./src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator-->
+
+        <!--生成Dao类存放位置-->
+        <!--javaClientGenerator type="XMLMAPPER" targetPackage="com.cui.mapper.recommend" targetProject="./src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator-->
+
+        <!--生成对应表及类名-->
+        <!--table  tableName="*" domainObjectName="similarity"
+                enableCountByExample="false" enableUpdateByExample="false"
+                enableDeleteByExample="false" enableSelectByExample="false"
+                selectByExampleQueryId="false"
+        >
+        </table-->
+
+        <table tableName="SCR_TNAC" domainObjectName="ScrTnac"></table>
+        <table tableName="SIMILARITY" domainObjectName="Similarity"></table>
+        <table tableName="SCR_TXNDN_INF" domainObjectName="ScrTxndnInf"></table>
+        <table tableName="TS_TASK_INFO" domainObjectName="TsTaskInfo"></table>
+        <table tableName="TT_FUND_DATA" domainObjectName="TtFundData"></table>
+
+    </context>
+</generatorConfiguration>
