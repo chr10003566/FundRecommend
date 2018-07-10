@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping date-format="yyyy-MM-dd">
+        <class-a>com.cui.po.data.UserPO</class-a>
+        <class-b>com.cui.vo.data.UserVO</class-b>
+        <field>
+            <a>name</a>
+            <b>name</b>
+        </field>
+        <field>
+            <a>loginId</a>
+            <b>loginId</b>
+        </field>
+        <field>
+            <a>pwd</a>
+            <b>pwd</b>
+        </field>
+        <field>
+            <a>duty</a>
+            <b>duty</b>
+        </field>
+        <field>
+            <a>age</a>
+            <b>age</b>
+        </field>
+        <field>
+            <a>cellNumber</a>
+            <b>cellNumber</b>
+        </field>
+        <field>
+            <a>photoUrl</a>
+            <b>photoUrl</b>
+        </field>
+        <field>
+            <a>used</a>
+            <b>used</b>
+        </field>
+    </mapping>
+</mappings>

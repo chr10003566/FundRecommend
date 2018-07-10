@@ -32,7 +32,7 @@ public class UserDaoImpl implements UserDao {
                 res.setStatus(CommonResult.CODE.SUCCESS);
                 res.setMessage("添加成功");
                 List<UserPO> list = new ArrayList<UserPO>();
-
+                list.add(userPO);
                 res.setUserPOList(list);
                 res.setCount(list.size());
             }

@@ -2,11 +2,9 @@ package com.cui.dao.impl;
 
 import com.cui.dao.RecommendDao;
 import com.cui.mapper.recommend.RecommendMapper;
-import com.cui.po.data.UserPO;
 import com.cui.po.data.recommend.RecommendPO;
 import com.cui.po.request.recommend.RecommendPORequest;
 import com.cui.po.result.CommonResult;
-import com.cui.po.result.UserPOResult;
 import com.cui.po.result.recommend.RecommendPOResult;
 import org.springframework.stereotype.Repository;
 
