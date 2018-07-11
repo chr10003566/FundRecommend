@@ -10,7 +10,5 @@ public interface RecommendMapper {
 
     public int delete(Long id);
 
-
-
 //    public int update(RecommendPO recommendPO);
 }
